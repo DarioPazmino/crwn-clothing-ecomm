@@ -6,6 +6,8 @@ export const BackgroundImage = styled.div`
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
   background-size: cover;
   background-position: center;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+  transition: 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 `;
 
 export const Body = styled.div`
@@ -15,14 +17,15 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+  border-radius: 4px;
   background-color: white;
   opacity: 0.7;
   position: absolute;
 
   h2 {
     font-weight: bold;
-    margin: 0 6px 0;
+    margin: 10px 6px 0;
     font-size: 22px;
     color: #4a4a4a;
   }
@@ -40,7 +43,8 @@ export const DirectoryItemContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+  border-radius: 4px;
   margin: 0 7.5px 15px;
   overflow: hidden;
 

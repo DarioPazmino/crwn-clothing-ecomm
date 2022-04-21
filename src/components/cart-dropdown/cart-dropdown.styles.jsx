@@ -9,10 +9,11 @@ export const CartDropdownContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: 0 0 8px rgba(0,0,0,.15);
+  border-radius: 4px;
   background-color: white;
-  top: 90px;
-  right: 40px;
+  top: 120px;
+  right: 45px;
   z-index: 5;
 
   ${BaseButton}, 
