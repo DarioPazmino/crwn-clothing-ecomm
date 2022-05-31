@@ -12,7 +12,7 @@ import { selectCurrentUser } from "../../store/user/user.selector";
 
 import { signOutStart } from "../../store/user/user.action";
 
-import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles.jsx';
+import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles';
 
 const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
