@@ -7,17 +7,12 @@ export const ProductCartContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
-
   img {
     width: 100%;
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
-    transition: .3s ease-in-out;
-    border-radius: 4px;
-    box-shadow: 0 0 7px rgba(0,0,0,.2);
   }
-
   button {
     width: 80%;
     opacity: 0.7;
@@ -25,14 +20,12 @@ export const ProductCartContainer = styled.div`
     top: 255px;
     display: none;
   }
-
   &:hover {
     img {
       opacity: 0.8;
     }
-
     button {
-      opacity: 1;
+      opacity: 0.85;
       display: flex;
     }
   }

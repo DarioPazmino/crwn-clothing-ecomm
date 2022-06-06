@@ -5,11 +5,9 @@ export const CartItemContainer = styled.div`
   display: flex;
   height: 80px;
   margin-bottom: 15px;
-`;
-
-export const Image = styled.img`
-  width: 30%;
-  border-radius: 4px;
+  img {
+    width: 30%;
+  }
 `;
 
 export const ItemDetails = styled.div`
@@ -19,12 +17,7 @@ export const ItemDetails = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 10px 20px;
-`;
-
-export const Name = styled.span`
-  font-size: 16px;
-`;
-
-export const Price = styled.span`
-  font-size: 16px;
+  span {
+    font-size: 16px;
+  }
 `;

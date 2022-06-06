@@ -13,15 +13,18 @@ export const CheckoutItemContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-export const Label = styled.span`
+export const BaseSpan = styled.span`
   width: 23%;
+`;
+
+export const Quantity = styled(BaseSpan)`
   display: flex;
 `;
 
