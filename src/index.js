@@ -8,12 +8,13 @@ import { Elements } from "@stripe/react-stripe-js";
 import { store, persistor } from "./store/store";
 import { stripePromise } from "./utils/stripe/stripe.utils";
 
-import "./index.scss";
+import { GlobalStyle } from "./global.styles";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+  <GlobalStyle />
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>

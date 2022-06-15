@@ -12,6 +12,8 @@ export const ProductCartContainer = styled.div`
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
   }
   button {
     width: 80%;
@@ -19,6 +21,13 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.85;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
   &:hover {
     img {
@@ -27,6 +36,20 @@ export const ProductCartContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      img {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+        display: flex;
+      }
     }
   }
 `;
